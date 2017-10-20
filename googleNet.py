@@ -70,8 +70,7 @@ for(i, idx) in enumerate(idxs):
 		cv2.putText(image, text, (5,25), cv2.FONT_HERSHEY_SIMPLEX, 0.7,(0,0,255),2)
 		
         #display predicted labels and + associated probablity to the console
-		print("[Info] {}.label: {}, probablity: {:.5}".format(i+1, 
-			classes[idx], preds[0][idx]))
+	print("[Info] {}.label: {}, probablity: {:.5}".format(i+1, classes[idx], preds[0][idx]))
 
 cv2.imshow("Image", image)
 cv2.waitKey(0)
